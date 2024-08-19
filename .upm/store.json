@@ -1,0 +1,1 @@
+{"version":2,"languages":{"python3-pip":{"specfileHash":"14f012d732e31fe227fd2d47ce6d9ec1","guessedImports":["PyYAML","telegram","aiohttp"],"guessedImportsHash":"b6f267ca06204b2cd48adbde0ba9ac66"},"python3-poetry":{"guessedImportsHash":"82d01c55b7a6b54bec056cbc727f221a"}}}
