@@ -1,0 +1,64 @@
+birdeye_api_key: "4fea8cdd28444c85b8dc8177af0e5f4c"
+telegram_bot_token: "7289089452:AAFqP22jfQSW-_rBnqA-XgdB80T7PT1TyVM"
+allowed_chat_ids:
+  - 5974965641  # Replace with your actual chat ID (as an integer)
+
+# Scanning Settings
+scan_interval: 60  # in seconds
+scan_new_listings_only: true
+
+# Chains to scan
+chains:
+  - solana
+  - ethereum
+  - arbitrum
+  # Add more chains as needed
+
+# Filter Criteria
+filter_criteria:
+  min_volume:
+    5m: 1000
+    10m: 2000
+    1h: 10000
+    24h: 100000
+  min_volume_usd:
+    5m: 10000
+    1h: 50000
+    24h: 100000
+  min_liquidity: 50000
+  max_supply: 1000000000
+  min_market_cap: 100000
+  max_market_cap: 10000000
+  min_trades: 100
+  min_price_change:
+    5m: 5
+    1h: 10
+    24h: 20
+  token_security: true
+  max_creator_ownership: 2
+  min_supply_traded: 10
+  first_mint_date: "2023-01-01T00:00:00Z"  # ISO 8601 format
+
+# Additional Bot Settings
+bot_settings:
+  welcome_message: "Welcome to the Token Scanning Bot! Use /help to see available commands."
+  help_message: |
+    Available commands:
+    /start - Start the bot
+    /help - Show this help message
+    /scan_new_listings [on/off] - Set whether to scan only new listings
+    /chain_selection [all/specific] [chain_name] - Choose chains to scan
+    /min_volume [time_period] [value] - Set minimum volume
+    /min_liquidity [value] - Set minimum liquidity
+    /max_supply [value] - Set maximum token supply
+    /min_market_cap [value] - Set minimum market cap
+    /max_market_cap [value] - Set maximum market cap
+    /min_price_change [percentage] [time_period] - Set minimum price change
+    /min_volume_usd [value] [time_period] - Set minimum USD volume
+    /token_security [on/off] - Enable/disable token security checks
+    /creator_threshold [percentage] - Set creator ownership threshold
+    /first_mint_date [date_time] - Set first mint date
+    /supply_traded_percentage [percentage] - Set minimum supply traded
+    /subscribe - Subscribe to real-time updates
+    /unsubscribe - Unsubscribe from updates
+    /status - Show current settings
